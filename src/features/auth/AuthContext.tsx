@@ -1,5 +1,7 @@
 import { createContext, useState, useCallback, type ReactNode } from "react";
 
+/* This class act like a SpringSecutity Config class */
+
 export interface User {
   username: string;
 }
@@ -46,3 +48,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     </AuthContext.Provider>
   );
 }
+
+
+/*
+Versions of AuthContext.tsx
+// 2026.03.15 : Created a Auth Context.tsx to manage the authentication state of the user 
+                similar to Spring Security Config class or server side session management only client side session management.
+
+
+*/
